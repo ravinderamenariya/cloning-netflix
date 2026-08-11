@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Netflix-inspired responsive landing page demo built with HTML, CSS and JavaScript.">
+  <title>Netflix — Watch Movies & TV Shows</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="logo" href="#" aria-label="Netflix home">NETFLIX</a>
+      <div class="nav-actions">
+        <button class="btn btn-outline" type="button" id="languageBtn">English ▾</button>
+        <button class="btn btn-red" type="button" id="signInBtn">Sign In</button>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <h1>Enjoy big movies, hit series and more from ₹149.</h1>
+      <h2>Join today. Cancel anytime.</h2>
+      <p>Ready to watch? Enter your email to create or restart your membership.</p>
+      <form class="home-form" id="signupForm" novalidate>
+        <label class="sr-only" for="email">Email address</label>
+        <input id="email" name="email" type="email" autocomplete="email" placeholder="Email Address" required>
+        <button class="btn btn-red btn-start" type="submit">Get Started <span aria-hidden="true">›</span></button>
+      </form>
+      <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+    </div>
+  </header>
+
+  <main>
+    <section class="feature">
+      <div class="feature-inner">
+        <div class="feature-copy">
+          <h2>Enjoy on your TV</h2>
+          <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+        </div>
+        <div class="feature-media"><img src="./image.png" alt="TV and remote illustration" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="feature">
+      <div class="feature-inner reverse">
+        <div class="feature-media"><img src="./image copy.png" alt="Mobile streaming illustration" loading="lazy"></div>
+        <div class="feature-copy">
+          <h2>Download your shows to watch offline</h2>
+          <p>Save your favourites easily and always have something to watch.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature">
+      <div class="feature-inner">
+        <div class="feature-copy">
+          <h2>Watch everywhere</h2>
+          <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+        </div>
+        <div class="feature-media"><img src="./image.png" alt="TV streaming illustration" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="feature">
+      <div class="feature-inner reverse">
+        <div class="feature-media"><img src="./image copy 2.png" alt="Kids profile illustration" loading="lazy"></div>
+        <div class="feature-copy">
+          <h2>Create profiles for kids</h2>
+          <p>Send children on adventures with their favourite characters in a space made just for them.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" aria-labelledby="faq-heading">
+      <h2 id="faq-heading">Frequently Asked Questions</h2>
+      <div class="faq-list">
+        <button class="faq-item" type="button" aria-expanded="false">
+          <span>What is Netflix?</span><span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer"><p>Netflix is a streaming service where members can watch movies and TV shows on supported devices.</p></div>
+
+        <button class="faq-item" type="button" aria-expanded="false">
+          <span>How much does Netflix cost?</span><span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer"><p>Pricing depends on the plan and market. This page is a front-end demo and does not process subscriptions.</p></div>
+
+        <button class="faq-item" type="button" aria-expanded="false">
+          <span>What can I watch on Netflix?</span><span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer"><p>Available content varies by region and changes over time.</p></div>
+
+        <button class="faq-item" type="button" aria-expanded="false">
+          <span>Where can I watch?</span><span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer"><p>You can watch on supported TVs, phones, tablets, computers and other compatible devices.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>Questions? Call 000-800-919-1694</p>
+      <div class="footer-links">
+        <a href="#">Investor Relations</a><a href="#">Help Center</a><a href="#">Media Center</a><a href="#">Contact Us</a>
+        <a href="#">Account</a><a href="#">Privacy</a><a href="#">Speed Test</a><a href="#">Ways to Watch</a>
+      </div>
+      <p class="demo-note">Front-end educational/demo project — not affiliated with Netflix.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
